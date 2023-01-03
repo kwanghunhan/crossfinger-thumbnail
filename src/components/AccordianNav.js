@@ -163,12 +163,27 @@ const AccordianNav = () => {
   return (
     <AccordianNavBlock>
       <MainTitleBlock>
-        <p>
+        {/* <p>
           <span>CROSSFINGER</span> 는 당신의 든든한 <b>해외 파트너</b>가
           되겠습니다.
         </p>
         <p>
           고객님들의 해외제조를 위해 편리한 제조 플랫폼으로 곧 찾아뵙겠습니다.
+        </p> */}
+        <p>
+          <span>CROSSFINGER</span> 는 현실의 두려움에 도전합니다.
+        </p>
+        <p>
+          <span>CROSSFINGER</span> 는 세계를 연결해 나갑니다.
+        </p>
+        <p>
+          그래서 새로운 <b>제조혁신</b>을 써 나가고 있습니다.
+        </p>
+        <p>
+          그 결과 최고의 <b>B2M</b> 플랫폼을 만들었습니다.
+        </p>
+        <p>
+          자! <span>CROSSFINGER</span> 와 함께 하시겠습니까?
         </p>
       </MainTitleBlock>
       <Gallery>
