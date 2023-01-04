@@ -123,6 +123,13 @@ const ContentBlock = styled.div`
       line-height: 1rem;
     }
   }
+
+  @media screen and (max-width: 500px) {
+    p {
+      font-size: 0.8rem;
+      line-height: 1.3rem;
+    }
+  }
 `;
 
 const Content = ({ title, contents }) => {
@@ -208,6 +215,19 @@ const MainTitleBlock = styled.div`
     .contents {
       font-size: 1.2rem;
       line-height: 1.7rem;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .title {
+      span {
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+    }
+    .contents {
+      font-size: 1rem;
+      line-height: 1.5rem;
     }
   }
 `;
