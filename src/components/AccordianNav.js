@@ -7,11 +7,11 @@ const ContentWrapper = styled.div`
   color: #fff;
   text-align: center;
   width: 100%;
-  height: 300px;
+  height: 130px;
   bottom: -350px;
   transition: 0.5s;
   padding: 20px;
-  padding-top: 50px;
+  padding-top: 30px;
   box-sizing: border-box;
 
   .sns {
@@ -90,7 +90,8 @@ const ContentBlock = styled.div`
   p {
     text-decoration: none;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 2rem;
   }
 
   a .fa {
@@ -99,6 +100,28 @@ const ContentBlock = styled.div`
 
   a:last-child fa {
     margin-right: 0;
+  }
+
+  @media screen and (max-width: 950px) {
+    p {
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    p {
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    p {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
   }
 `;
 
@@ -128,9 +151,9 @@ const Content = ({ title, contents }) => {
 const MainTitleBlock = styled.div`
   background-color: #0000008f;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 500;
-  font-style: italic;
+  /* font-style: italic; */
   line-height: 3rem;
   position: absolute;
   z-index: 10;
@@ -138,23 +161,53 @@ const MainTitleBlock = styled.div`
   top: 30%;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 30px 100px;
+  /* padding: 30px 100px; */
   /* border-radius: 50px; */
   width: 100%;
+  margin: 0 auto;
+  padding: 30px;
 
-  p {
-    margin-bottom: 20px;
-
+  .title {
     span {
-      font-size: 2.5rem;
+      font-size: 8rem;
+      line-height: 8rem;
       font-weight: 700;
-      color: crimson;
+      text-align: center;
     }
+  }
+
+  .contents {
+    font-size: 2rem;
+    line-height: 2.5rem;
 
     b {
-      font-size: 2.5rem;
-      font-weight: 700;
       color: dodgerblue;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    .title {
+      span {
+        font-size: 6rem;
+        line-height: 6rem;
+      }
+    }
+    .contents {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .title {
+      span {
+        font-size: 4rem;
+        line-height: 4rem;
+      }
+    }
+    .contents {
+      font-size: 1.2rem;
+      line-height: 1.7rem;
     }
   }
 `;
@@ -163,6 +216,27 @@ const AccordianNav = () => {
   return (
     <AccordianNavBlock>
       <MainTitleBlock>
+        <div className="title">
+          <span>CROSSFINGER</span>
+        </div>
+        <div className="contents">
+          <p>
+            현실의 두려움에 <b>도전</b>합니다.
+          </p>
+          <p>
+            세계를 <b>연결</b>해 나갑니다.
+          </p>
+          <p>
+            새로운 해외 <b>제조혁신</b>을 이루겠습니다.
+          </p>
+          <p>coming soon...</p>
+        </div>
+        {/* <p>
+          <span>CROSSFINGER</span>
+        </p>
+        <p>
+          믿을 수 있는 <b>해외 제조</b> 플랫폼으로 곧 찾아 뵙겠습니다.
+        </p> */}
         {/* <p>
           <span>CROSSFINGER</span> 는 당신의 든든한 <b>해외 파트너</b>가
           되겠습니다.
@@ -170,7 +244,7 @@ const AccordianNav = () => {
         <p>
           고객님들의 해외제조를 위해 편리한 제조 플랫폼으로 곧 찾아뵙겠습니다.
         </p> */}
-        <p>
+        {/* <p>
           <span>CROSSFINGER</span> 는 현실의 두려움에 도전합니다.
         </p>
         <p>
@@ -184,7 +258,12 @@ const AccordianNav = () => {
         </p>
         <p>
           자! <span>CROSSFINGER</span> 와 함께 하시겠습니까?
-        </p>
+        </p> */}
+        {/* <p>
+          <sapn>
+            이제부터 <b>해외 제조</b>는 <span>CROSSFINGER</span>입니다.
+          </sapn>
+        </p> */}
       </MainTitleBlock>
       <Gallery>
         <GalleryItem imageName={"image1.jpg"} number={1}>
