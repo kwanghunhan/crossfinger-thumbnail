@@ -240,7 +240,14 @@ const AccordianNav = () => {
           <span>CROSSFINGER</span>
         </div>
         <div className="contents">
+          <p>대한민국 최초</p>
           <p>
+            <b>해외제조</b> 매칭플랫폼입니다.
+          </p>
+          <p>
+            새로운 <b>제조혁신</b>을 우리가 <b>함께</b> 만듭니다.
+          </p>
+          {/* <p>
             현실의 두려움에 <b>도전</b>합니다.
           </p>
           <p>
@@ -249,7 +256,7 @@ const AccordianNav = () => {
           <p>
             새로운 해외 <b>제조혁신</b>을 이루겠습니다.
           </p>
-          <p>coming soon...</p>
+          <p>coming soon...</p> */}
         </div>
         {/* <p>
           <span>CROSSFINGER</span>
