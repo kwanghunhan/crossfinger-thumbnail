@@ -192,6 +192,13 @@ const MainTitleBlock = styled.div`
     }
   }
 
+  .main-content {
+    b {
+      color: crimson;
+    }
+    padding-bottom: 20px;
+  }
+
   @media screen and (max-width: 950px) {
     .title {
       span {
@@ -237,16 +244,18 @@ const AccordianNav = () => {
     <AccordianNavBlock>
       <MainTitleBlock>
         <div className="title">
-          <span>CROSSFINGER</span>
+          <span>NOVALUX</span>
         </div>
         <div className="contents">
-          <p>대한민국 최초</p>
-          <p>
-            <b>해외제조</b> 매칭플랫폼입니다.
+          <br></br>
+          <p className="main-content">
+            <b>비전</b>을 현실로 만드는 기술 파트너
           </p>
           <p>
-            새로운 <b>제조혁신</b>을 우리가 <b>함께</b> 만듭니다.
+            최첨단 <b>머신비전 솔루션</b>으로
           </p>
+          <p>비즈니스의 경쟁력을 높이세요.</p>
+          <p>coming soon...</p>
           {/* <p>
             현실의 두려움에 <b>도전</b>합니다.
           </p>
@@ -295,27 +304,27 @@ const AccordianNav = () => {
       <Gallery>
         <GalleryItem imageName={"image1.jpg"} number={1}>
           <ContentWrapper>
-            <Content title="저렴한 견적 가격" contents="" />
+            <Content title="저렴한 개발 견적" contents="" />
           </ContentWrapper>
         </GalleryItem>
         <GalleryItem imageName={"image2.jpg"} number={2}>
           <ContentWrapper>
-            <Content title="간편한 주문 프로세스" contents="" />
+            <Content title="다양한 비전 솔루션" contents="" />
           </ContentWrapper>
         </GalleryItem>
         <GalleryItem imageName={"image3.jpg"} number={3}>
           <ContentWrapper>
-            <Content title="안전한 결제 시스템" contents="" />
+            <Content title="신속한 사용자 요구분석" contents="" />
           </ContentWrapper>
         </GalleryItem>
         <GalleryItem imageName={"image4.jpg"} number={4}>
           <ContentWrapper>
-            <Content title="투명한 생산 스케쥴" contents="" />
+            <Content title="투명한 개발 스케쥴" contents="" />
           </ContentWrapper>
         </GalleryItem>
         <GalleryItem imageName={"image5.jpg"} number={5}>
           <ContentWrapper>
-            <Content title="책임지는 제조 품질" contents="" />
+            <Content title="책임지는 시스템 품질" contents="" />
           </ContentWrapper>
         </GalleryItem>
       </Gallery>
